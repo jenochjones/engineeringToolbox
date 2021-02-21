@@ -33,6 +33,7 @@ html, body {
     display: flex;
     flex-direction: column;
     width: 210px;
+    height: 200px;
     border-style: solid;
     padding:10px;
     border-color: white;
