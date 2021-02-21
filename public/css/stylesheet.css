@@ -1,3 +1,6 @@
+body {
+    background-color: darkblue;
+}
 
 #linear-interp {
     display: flex;

@@ -13,17 +13,14 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fefbc15-71fd-4e63-a99c-f978edd8a999" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../enochjones.com/engineeringTools.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../enochjones.com/public/js/engineeringTools.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../enochjones.com/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../enochjones.com/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../enochjones.com/public/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/../enochjones.com/public/css/stylesheet.css" afterDir="false" />
+    <list default="true" id="4fefbc15-71fd-4e63-a99c-f978edd8a999" name="Default Changelist" comment="files">
+      <change beforePath="$PROJECT_DIR$/public/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +28,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="f616d94c-8fbc-4842-938b-481037f663c7" />
   <component name="ProjectId" id="1ooAx4MzFHeUfJNjO5uiXWFA4qu" />
@@ -54,7 +51,16 @@
       <option name="presentableId" value="Default" />
       <updated>1613942812287</updated>
       <workItem from="1613942813624" duration="339000" />
+      <workItem from="1613943852785" duration="188000" />
     </task>
+    <task id="LOCAL-00001" summary="files">
+      <created>1613943895202</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613943895202</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,5 +76,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="files" />
+    <option name="LAST_COMMIT_MESSAGE" value="files" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1613943908676">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1613943908676" />
   </component>
 </project>
