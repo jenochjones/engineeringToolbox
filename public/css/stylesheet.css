@@ -2,6 +2,16 @@ html, body {
     background-color: #3402fa;
 }
 
+#main-div {
+    position: absolute;
+    top: 40px;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+}
+
 #linear-interp {
     display: flex;
     flex-direction: column;

@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fefbc15-71fd-4e63-a99c-f978edd8a999" name="Default Changelist" comment="change background color" />
+    <list default="true" id="4fefbc15-71fd-4e63-a99c-f978edd8a999" name="Default Changelist" comment="change background color">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613942812287</updated>
       <workItem from="1613942813624" duration="339000" />
-      <workItem from="1613943852785" duration="450000" />
+      <workItem from="1613943852785" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="files">
       <created>1613943895202</created>
@@ -72,7 +74,21 @@
       <option name="project" value="LOCAL" />
       <updated>1613944431740</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change background color">
+      <created>1613950376983</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613950376983</updated>
+    </task>
+    <task id="LOCAL-00005" summary="change background color">
+      <created>1613950438231</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613950438231</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,10 +112,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="change background color" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1613944437689">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1613950444993">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1613944437689" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1613950444993" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613944299850">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
