@@ -1,3 +1,4 @@
+/////////Linear Interpolation///////////////////////////////////////
 function showLinearInterpolation () {
     $('.tool').each(function () {
         $(this).css('display', 'none');
@@ -14,6 +15,21 @@ function linearInterpolation () {
     let y2 = y1 + ((x2 - x1) * (y3 - y1) / (x3 - x1));
     $('#interp-result').empty().append(y2.toPrecision(3));
 }
+
+////////Normal and Critical Depth///////////////////////////////////
+
+function showNormalAndCriticalDepth () {
+    $('.tool').each(function () {
+        $(this).css('display', 'none');
+    });
+    $('#normal-critical-depth').css('display', 'flex');
+}
+
+function normalAndCriticalDepth () {
+
+}
+
+//////////////////////////Hide All/////////////////////////////////
 
 function showNone () {
     $('.tool').each(function () {

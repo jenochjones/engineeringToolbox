@@ -11,8 +11,14 @@
 <body>
 <div id="main-div">
     <div id="nav-bar">
+
+        <!-- Copy this for an additional nav bar item -->
         <div class="nav-item" style="width: 100%; height: auto; padding: 10px 0px 10px 0px" onclick="showLinearInterpolation()">
             <b style="color: white; padding: 10px; margin: 10px">Linear Interpolation</b>
+        </div>
+        <!----------------------------------------------->
+        <div class="nav-item" style="width: 100%; height: auto; padding: 10px 0px 10px 0px" onclick="showNormalAndCriticalDepth()">
+            <b style="color: white; padding: 10px; margin: 10px">Normal/Critical Depth</b>
         </div>
         <div class="nav-item" style="width: 100%; height: auto; padding: 10px 0px 10px 0px" onclick="showNone()">
             <b style="color: white; padding: 10px; margin: 10px">None</b>
@@ -53,6 +59,16 @@
                 </div>
             </div>
             <button id="linear-interp-result" onclick="linearInterpolation()" style="width: 90%; margin: 10px">Get Results</button>
+        </div>
+        <!------------------------------------------------------------->
+
+
+        <!-- Normal and Critical Depth Finder TOOL -->
+        <div id="normal-critical-depth" class="tool">
+            <div style="display: flex; flex-direction: row;">
+
+            </div>
+            <button id="normal-critical-result" onclick="normalAndCriticalDepth()" style="width: 90%; margin: 10px">Get Results</button>
         </div>
         <!------------------------------------------------------------->
 
