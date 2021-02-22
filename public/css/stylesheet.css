@@ -8,6 +8,10 @@ b {
     padding: 10px;
 }
 
+label {
+    color: white;
+}
+
 #main-div {
     position: absolute;
     top: 0px;
@@ -44,7 +48,6 @@ b {
     border-style: solid;
     padding:10px;
     border-color: white;
-    justify-self: center;
 }
 
 #linear-interp input {
@@ -67,4 +70,30 @@ b {
 
 .nav-item:hover {
     background-color: #3402fa;
+}
+
+#normal-critical-depth {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: auto;
+    border-style: solid;
+    padding:10px;
+    border-color: white;
+}
+
+#normal-critical-depth input {
+    width: 50px;
+    float: right;
+    margin: 2px;
+}
+
+#normal-critical-depth select {
+    width: 100px;
+    float: right;
+    margin: 2px;
+}
+
+#normal-critical-depth label {
+    margin: 2px;
 }
