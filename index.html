@@ -11,14 +11,17 @@
 <body>
 <div id="main-div">
     <div id="nav-bar">
-        <div style="width: 100%; height: 30px">
-            <b style="color: white">Linear Interpolation</b>
+        <div class="nav-item" style="width: 100%; height: auto; padding: 10px 0px 10px 0px" onclick="showLinearInterpolation()">
+            <b style="color: white; padding: 10px; margin: 10px">Linear Interpolation</b>
+        </div>
+        <div class="nav-item" style="width: 100%; height: auto; padding: 10px 0px 10px 0px" onclick="showNone()">
+            <b style="color: white; padding: 10px; margin: 10px">None</b>
         </div>
     </div>
     <div id="mainscreen-div">
 
         <!-- LINEAR INTERPOLATION TOOL -->
-        <div id="linear-interp">
+        <div id="linear-interp" class="tool">
             <div style="display: flex; flex-direction: row;">
                 <div style="display: flex; flex-direction: column;">
                     <span>
