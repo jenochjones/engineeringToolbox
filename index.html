@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <title>EngineeringToolbox</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="public/js/engineeringTools.js"></script>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
     <link rel="stylesheet" href="public/css/stylesheet.css">
+    <script type="text/javascript" src="public/js/engineeringTools.js"></script>
 </head>
 <body>
 <div id="main-div">
@@ -69,14 +68,14 @@
                 <div style="display: flex; flex-direction: column;  width: 50%">
                     <span>
                         <label>Units</label>
-                        <select>
+                        <select id="nc-units">
                             <option>Metric</option>
                             <option>U.S. Customary</option>
                         </select>
                     </span>
                     <span>
                     <label>Channel Type</label>
-                        <select>
+                        <select id="nc-channel-type" onchange="setChannelType()">
                             <option>Trapezoidal</option>
                             <option>Rectangular</option>
                             <option>Triangular</option>
@@ -109,14 +108,14 @@
                         <input id="mannings-roughness">
                     </span>
                     <span>
-                        <input type="radio" name="flow" style="float: left">
+                        <input id="enter-flow-radio" type="radio" name="flow" style="float: left" onclick="flowVsDepth()" checked>
                         <label>Enter Flow</label>
                         <input id="enter-flow">
                     </span>
                     <span>
-                        <input type="radio" name="flow" style="float: left">
+                        <input id="enter-depth-radio" type="radio" name="flow" style="float: left" onclick="flowVsDepth()">
                         <label>Enter Depth</label>
-                        <input id="enter-depth">
+                        <input id="enter-depth" disabled>
                     </span>
                     <button id="normal-critical-result" onclick="normalAndCriticalDepth()" style="width: 90%; margin: 10px">Get Results</button>
                 </div>
