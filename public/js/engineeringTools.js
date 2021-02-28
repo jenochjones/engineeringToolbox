@@ -27,27 +27,30 @@ function showNormalAndCriticalDepth() {
 }
 
 function normalAndCriticalDepth() {
+    let flowValues;
     if ($('#enter-depth-radio').prop('checked') == true) {
         let y = parseFloat($('#enter-depth').val());
-        let flow = solveForAandR(y);
-        $('#enter-flow').val(Math.round(flow * 1000) / 1000);
+        flowValues = solveForAandR(y);
+        $('#enter-flow').val(Math.round(flowValues[0] * 1000) / 1000);
     } else if ($('#enter-flow-radio').prop('checked') == true) {
         let finalFlow = $('#enter-flow').val();
         let yn = 0.0001;
-        let tryFlow = 0;
+        let tryFlow = 1;
         console.log('final flow: ' + finalFlow)
         debugger
         while (tryFlow > finalFlow + 0.00001 || tryFlow < finalFlow - 0.00001) {
-            yn += (finalFlow - tryFlow) / (finalFlow * 6);
-            tryFlow = solveForAandR(yn);
+            yn += yn * (finalFlow - tryFlow) / (finalFlow);
+            flowValues = solveForAandR(yn);
+            tryFlow = flowValues[0];
             console.log('tryflow: ' + tryFlow)
         }
         $('#enter-depth').val(Math.round(yn * 1000) / 1000);
     }
+    setResults(flowValues);
 }
 
 function solveForAandR(y) {
-    let a, r, i, theta, flow;
+    let a, r, i, theta, flow, t, hydraulicDepth, wettedPerimeter;
     let z1 = parseFloat($('#side-slope1').val());
     let z2 = parseFloat($('#side-slope2').val());
     let b = parseFloat($('#channel-width').val());
@@ -61,27 +64,65 @@ function solveForAandR(y) {
     }
     if ($('#nc-channel-type').val() == 'Trapezoidal') {
         a = (b + (z1 * y / 2) + (z2 * y / 2)) * y;
-        r = a / (b + y * Math.sqrt(Math.pow(z1, 2) + 1) + y * Math.sqrt(Math.pow(z2, 2) + 1));
+        wettedPerimeter = (b + y * Math.sqrt(Math.pow(z1, 2) + 1) + y * Math.sqrt(Math.pow(z2, 2) + 1));
+        r = a / wettedPerimeter;
+        t = b + z1 * y + z2 * y;
+        hydraulicDepth = a / t;
     } else if ($('#nc-channel-type').val() == 'Rectangular') {
         a = b * y;
-        r = a / (2 * y + b);
+        wettedPerimeter = (2 * y + b);
+        r = a / wettedPerimeter;
+        t = b;
+        hydraulicDepth = a / t;
     } else if ($('#nc-channel-type').val() == 'Triangular') {
         a = ((z1 * y / 2) + (z2 * y / 2)) * y;
-        r = a / (y * Math.sqrt(Math.pow(z1, 2) + 1) + y * Math.sqrt(Math.pow(z2, 2) + 1));
+        wettedPerimeter = (y * Math.sqrt(Math.pow(z1, 2) + 1) + y * Math.sqrt(Math.pow(z2, 2) + 1));
+        r = a / wettedPerimeter;
+        t = y * (z1 + z2);
+        hydraulicDepth = a / t;
     } else if ($('#nc-channel-type').val() == 'Circular') {
         theta = 2 * (Math.PI - Math.acos((2 * y / d) - 1));
+        wettedPerimeter = theta * d / 2;
         a = (theta - Math.sin(theta)) * Math.pow(d, 2) / 8;
         r = (1 - Math.sin(theta) / theta) * d / 4;
+        t = 2 * Math.sqrt(y * (d - y));
+        hydraulicDepth = ((theta - Math.sin(theta)) / (Math.sin(theta / 2))) * d / 8;
     } else if ($('#nc-channel-type').val() == 'Cross Section') {
 
     }
     flow = solveManningsForFlow (a, r, i, n, lo);
-    return flow;
+    let velocity = flow / a;
+    let flowValues = [flow, y, velocity, a, wettedPerimeter, r, t, hydraulicDepth]
+    return flowValues;
 }
 
 function solveManningsForFlow (a, r, i, n, s) {
     let flow = (i / n) * a * Math.pow(r, 2/3) * Math.sqrt(s);
     return flow
+}
+
+function setResults(flow) {
+    let fut, dut, vut, aut;
+    if ($('#nc-units').val() == 'Metric') {
+        fut = 'm<sup>3</sup>/s';
+        dut = 'm';
+        vut = 'm/s<sup>2</sup>';
+        aut = 'm<sup>2</sup>';
+    } else {
+        fut = 'ft<sup>3</sup>/s';
+        dut = 'ft';
+        vut = 'ft/s<sup>2</sup>';
+        aut = 'ft<sup>2</sup>';
+    }
+    let html = `<p>Flow: ${Math.round(flow[0] * 1000) / 1000} ${fut}</p>
+    <p>Normal Depth: ${Math.round(flow[1] * 1000) / 1000} ${dut}</p>
+    <p>Velocity: ${Math.round(flow[2] * 1000) / 1000} ${vut}</p>
+    <p>Flow Area: ${Math.round(flow[3] * 1000) / 1000} ${aut}</p>
+    <p>Wetted Perimeter: ${Math.round(flow[4] * 1000) / 1000} ${dut}</p>
+    <p>Hydraulic Radius: ${Math.round(flow[5] * 1000) / 1000} ${dut}</p>
+    <p>Top Width: ${Math.round(flow[6] * 1000) / 1000} ${dut}</p>
+    <p>Hydraulic Depth: ${Math.round(flow[7] * 1000) / 1000} ${dut}</p>`;
+    $('#nc-result-div').empty().append(html);
 }
 
 function setChannelType() {

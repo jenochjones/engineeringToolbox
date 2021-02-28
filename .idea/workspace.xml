@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4fefbc15-71fd-4e63-a99c-f978edd8a999" name="Default Changelist" comment="normal depth for rectangel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/engineeringTools.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/engineeringTools.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613942812287</updated>
       <workItem from="1613942813624" duration="339000" />
-      <workItem from="1613943852785" duration="19929000" />
+      <workItem from="1613943852785" duration="23317000" />
     </task>
     <task id="LOCAL-00001" summary="files">
       <created>1613943895202</created>
@@ -163,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614187560962</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Finished flow from depth">
+      <created>1614540086515</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614540086515</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,13 +197,14 @@
     <MESSAGE value="add navbar" />
     <MESSAGE value="formatted normal critical depth tool" />
     <MESSAGE value="normal depth for rectangel" />
-    <option name="LAST_COMMIT_MESSAGE" value="normal depth for rectangel" />
+    <MESSAGE value="Finished flow from depth" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished flow from depth" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1614034738668">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1614540099923">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1614034738668" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1614540099923" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613944299850">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

@@ -80,7 +80,7 @@ label {
     border-style: solid;
     padding:10px;
     border-color: white;
-    background-color: rgba(0, 15, 160, 0.2);
+    background-color: rgba(0, 15, 160, 0.4);
 }
 
 #normal-critical-depth input {
@@ -97,4 +97,9 @@ label {
 
 #normal-critical-depth label {
     margin: 2px;
+}
+
+#nc-result-div p {
+    color: white;
+    margin: 2px 5px 2px 20px;
 }
