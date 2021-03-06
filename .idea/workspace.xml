@@ -22,7 +22,6 @@
     <list default="true" id="4fefbc15-71fd-4e63-a99c-f978edd8a999" name="Default Changelist" comment="normal depth for rectangel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/engineeringTools.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/engineeringTools.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +64,8 @@
       <option name="presentableId" value="Default" />
       <updated>1613942812287</updated>
       <workItem from="1613942813624" duration="339000" />
-      <workItem from="1613943852785" duration="23317000" />
+      <workItem from="1613943852785" duration="28953000" />
+      <workItem from="1614898753378" duration="10410000" />
     </task>
     <task id="LOCAL-00001" summary="files">
       <created>1613943895202</created>
@@ -172,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614540086515</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added Results">
+      <created>1614555858481</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1614555858482</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +205,8 @@
     <MESSAGE value="formatted normal critical depth tool" />
     <MESSAGE value="normal depth for rectangel" />
     <MESSAGE value="Finished flow from depth" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished flow from depth" />
+    <MESSAGE value="Added Results" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Results" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1614540099923">
