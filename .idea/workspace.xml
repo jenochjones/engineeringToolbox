@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4fefbc15-71fd-4e63-a99c-f978edd8a999" name="Default Changelist" comment="normal depth for rectangel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/engineeringTools.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/engineeringTools.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +64,8 @@
       <updated>1613942812287</updated>
       <workItem from="1613942813624" duration="339000" />
       <workItem from="1613943852785" duration="28953000" />
-      <workItem from="1614898753378" duration="10410000" />
+      <workItem from="1614898753378" duration="10565000" />
+      <workItem from="1615125009104" duration="1562000" />
     </task>
     <task id="LOCAL-00001" summary="files">
       <created>1613943895202</created>
@@ -179,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614555858482</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added critical depth">
+      <created>1615052425925</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1615052425925</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,13 +213,14 @@
     <MESSAGE value="normal depth for rectangel" />
     <MESSAGE value="Finished flow from depth" />
     <MESSAGE value="Added Results" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Results" />
+    <MESSAGE value="Added critical depth" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added critical depth" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1614540099923">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1615052433332">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1614540099923" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1615052433332" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613944299850">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

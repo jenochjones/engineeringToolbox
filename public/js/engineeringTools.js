@@ -14,7 +14,7 @@ function linearInterpolation() {
     let y1 = parseFloat($('#y1-input').val());
     let y3 = parseFloat($('#y3-input').val());
     let y2 = y1 + ((x2 - x1) * (y3 - y1) / (x3 - x1));
-    $('#interp-result').empty().append(y2.toPrecision(3));
+    $('#interp-result').empty().append(Math.round(y2 * 1000) / 1000);
 }
 
 ////////Normal and Critical Depth///////////////////////////////////
@@ -120,6 +120,7 @@ function solveForAandR(flowValues) {
     }
     flow = solveManningsForFlow (a, r, flowValues['i'], flowValues['manningsN'], flowValues['baseSlope']);
     let velocity = flow / a;
+    console.log(flow)
     let newFlowValues = {
         flow: flow,
         slope1: flowValues['slope1'],
@@ -158,7 +159,6 @@ function normalDepth() {
         let ynOld = 0;
         let jumpVal = 20;
         let tryFlow = 1;
-        debugger
         while (tryFlow > finalFlow + 0.00001 || tryFlow < finalFlow - 0.00001) {
             if (tryFlow > finalFlow) {
                 jumpVal = jumpVal / 2.1;
@@ -170,14 +170,10 @@ function normalDepth() {
             firstFlowValues['depth'] = yn;
             allValues = solveForAandR(firstFlowValues);
             tryFlow = allValues['flow'];
-            console.log(ynOld)
-            console.log(yn)
-            console.log(tryFlow)
-            console.log(finalFlow)
         }
         $('#enter-depth').val(Math.round(yn * 1000) / 1000);
     }
-    let criticalValues = findCriticalDepth(allValues);
+    let criticalValues = findCriticalDepth(allValues, allValues['flow']);
     allValues['depth'] = firstFlowValues['depth']
     allValues['criticalDepth'] = criticalValues['depth'];
     allValues['criticalVelocity'] = criticalValues['velocity'];
@@ -186,7 +182,7 @@ function normalDepth() {
     setResults(allValues);
 }
 
-function findCriticalDepth(criticalFlowValues) {
+function findCriticalDepth(criticalFlowValues, flow) {
     let g;
     let newCriticalFlowValues = {};
     if ($('#nc-units').val() == 'Metric') {
@@ -207,11 +203,12 @@ function findCriticalDepth(criticalFlowValues) {
             ycOld = yc;
             yc += jumpVal;
         }
-        //yc += yc * (criticalFlowValue - tryFlowValue) / (criticalFlowValue);
         criticalFlowValues['depth'] = yc;
         newCriticalFlowValues = solveForAandR(criticalFlowValues);
         tryFlowValue = Math.pow(newCriticalFlowValues['area'], 3) / newCriticalFlowValues['topWidth'];
     }
+    newCriticalFlowValues['flow'] = flow;
+    newCriticalFlowValues['velocity'] = flow / newCriticalFlowValues['area'];
     newCriticalFlowValues['criticalSlope'] = findCriticalSlope(newCriticalFlowValues);
     return newCriticalFlowValues
 }
