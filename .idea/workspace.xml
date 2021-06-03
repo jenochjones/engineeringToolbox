@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fefbc15-71fd-4e63-a99c-f978edd8a999" name="Default Changelist" comment="New Pages">
+    <list default="true" id="4fefbc15-71fd-4e63-a99c-f978edd8a999" name="Default Changelist" comment="blog url">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -75,7 +75,7 @@
       <workItem from="1613943852785" duration="28953000" />
       <workItem from="1614898753378" duration="10565000" />
       <workItem from="1615125009104" duration="1562000" />
-      <workItem from="1622722018208" duration="626000" />
+      <workItem from="1622722018208" duration="1709000" />
     </task>
     <task id="LOCAL-00001" summary="files">
       <created>1613943895202</created>
@@ -203,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622722250549</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="blog url">
+      <created>1622722654118</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1622722654118</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,16 +239,7 @@
     <MESSAGE value="Added Results" />
     <MESSAGE value="Added critical depth" />
     <MESSAGE value="New Pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Pages" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1615052433332">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1615052433332" />
-    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613944299850">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1613944299850" />
+    <MESSAGE value="blog url" />
+    <option name="LAST_COMMIT_MESSAGE" value="blog url" />
   </component>
 </project>
